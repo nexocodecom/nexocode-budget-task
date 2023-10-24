@@ -19,5 +19,4 @@ public class TestBudgetApplication {
     public static void main(String[] args) {
         SpringApplication.from(BudgetApplication::main).with(TestBudgetApplication.class).run(args);
     }
-
 }

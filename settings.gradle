@@ -1,1 +1,3 @@
 rootProject.name = 'budget'
+include 'app'
+include 'notifications'

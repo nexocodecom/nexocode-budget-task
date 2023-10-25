@@ -33,6 +33,7 @@ class ExampleControllerTest {
         Example response = restTemplate.getForObject("/example/id-123", Example.class);
 
         assertThat(response).isEqualTo(new Example("id-123", 1));
+        assertThat(exampleRepository.findAll()).asList().containsExactly(new Example("id-123", 1));
     }
 
     @Test

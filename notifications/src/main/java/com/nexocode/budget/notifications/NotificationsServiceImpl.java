@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class NotificationsServiceImpl implements NotificationsService {
-    public void sendNotification(String username, NotificationType notificationType) {
-        System.out.println("Notification:" + username + ":" + notificationType);
+    public void sendNotification(String email, NotificationType notificationType) {
+        System.out.println("Sending email:" + email + ":" + notificationType);
     }
 }
